@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" ,sans-serif;
+}
+
+:root {
+    --color1: #F5CCE8;
+    --color2: #EC9DED;
+    --color3: #C880B7;
+    --color4: #9F6BA0;
+    --color5: #4A2040;
+}
+
+/* Navbar Section Starts Here */
+
+.navbar {
+    background-color: #4A2040;
+    color: black;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.hamburger_menu {
+    display: none;
+}
+
+.cross_menu {
+    display: none;
+}
+
+.hidden_menu {
+    display: none;
+}
+
+.up {
+    color: #F5CCE8;
+    font-size: clamp(1rem, 5vw, 2.5rem);
+    font-weight: 600;
+}
+
+.down {
+    color: #F5CCE8;
+    font-size: clamp(0.5rem, 2.5vw, 1.5rem);
+    font-weight: 500;
+}
+
+.right_nav {
+    color: #F5CCE8;
+    display: flex;
+    gap: 15px;
+    font-size: clamp(0.5rem, 2.5vw, 1.5rem);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Navbar Section Ends Here */
+
+/* Hero Section Starts Here */
+
+.hero_section {
+    background-color: #9F6BA0;
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.heading {
+    color: #4A2040;
+    font-size: clamp(0.5rem, 4vw, 5rem);
+    font-weight: 700;
+}
+
+.sub_heading {
+    color: #4A2040;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.sub_heading .top {
+    font-size: clamp(0.5rem, 3vw, 2.5rem);
+    font-weight: 700;
+}
+
+.sub_heading .middle {
+    font-size: clamp(0.5rem, 2vw, 2rem);
+    font-weight: 700;
+}
+
+.sub_heading .bottom {
+    font-size: clamp(0.5rem, 3vw, 3rem);
+    font-weight: 700;
+}
+
+.vmw {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.box {
+    height: 300px;
+    width: 400px;
+    background-color: #C880B7;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box .top {
+    font-size: clamp(1rem, 1.5vw, 5rem);
+    font-weight: 500;
+}
+
+.box .middle,.bottom {
+    font-size: clamp(1rem, 1.5vw, 5rem);
+    font-weight: 500;
+}
+
+/* Hero Section Ends Here */
+
+/* Footer Section Starts Here */
+
+.footer {
+    background-color: var(--color2);
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer .top {
+    color: var(--color5);
+    font-size: clamp(1rem, 1.5vw, 5rem);
+    font-weight: 500;
+}
+
+.footer .bottom {
+    display: flex;
+    gap: 50px;
+    font-size: clamp(1rem, 1.5vw, 5rem);
+}
+
+.footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: var(--color5);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer Section Ends Here */
+
+/* Media Query Section Starts Here */
+
+@media (max-width: 720px) and (min-width: 320px) {
+    .navbar {
+        width: 100vw;
+        padding: 10%;
+    }
+
+    .right_nav {
+        display: none;
+    }
+
+    .hamburger_menu {
+        display: flex;
+        height: 5vh;  
+        width: 5vw;  
+    }
+
+    .cross_menu {
+        display: none;
+        height: 7vh;  
+        width: 7vw;  
+    }
+
+    .hidden_menu {
+        height: 50vh;
+        width: 100vw;
+        flex-direction: column;
+        align-items: end;
+        justify-content: flex-start;
+        padding: 10% 10%;
+        gap: 30px;
+        text-decoration: underline;
+        font-size: 5vh;
+    }
+
+    .hero_section {
+        width: 100vw;
+    }
+
+    .vmw {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        justify-content: space-around;
+        gap: 2%;
+        width: 100%;
+    }
+
+    .box {
+        height: 25vh;
+        width: 80vw;
+        background-color: #C880B7;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .footer {
+        background-color: var(--color2);
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .icons {
+        width: 5vw;
+    }
+}
+
+/* Media Query Section Ends Here */
