@@ -7,13 +7,14 @@ hamburger_menu.addEventListener("click", () => {
     hamburger_menu.style.display = "none";
     cross_menu.style.display = "flex";
     hidden_menu.style.display = "flex";
-    navbar.style.borderBottom = "2px solid #fff";
+    navbar.style.borderBottom = "2px solid #000";
 })
 
 cross_menu.addEventListener("click", () => {
     hamburger_menu.style.display = "flex";
     cross_menu.style.display = "none";
     hidden_menu.style = "none";
+    navbar.style.borderBottom = "none";
 })
 
 const animate = document.querySelectorAll(".animate");
@@ -33,3 +34,12 @@ for (let i = 0; i < animate.length; i++) {
     observer.observe(element);
 }
 
+const hm = document.querySelectorAll(".hm");
+
+hm.forEach((item) => {
+    item.addEventListener("click", () => {
+        cross_menu.style.display = "none";
+        hidden_menu.style.display = "none";
+        hamburger_menu.style.display = "flex";
+    })
+})

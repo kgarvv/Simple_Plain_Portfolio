@@ -321,6 +321,7 @@ html, body {
     }
     
     .hidden_menu {
+        /*  */
         background-color: var(--color5);
         height: 30vh;
         width: 100%;
@@ -329,13 +330,14 @@ html, body {
         gap: 1vh;
         padding: 5% 5%;
         position: absolute;
-        top: 100%;
+        top: 15vh;
         left: 0;
         z-index: 1;
     }
     
     .hidden_menu a, .hidden_menu li {
         list-style: none;
+        text-decoration: none;
         font-size: 5vh;
         color: var(--color4);
         cursor: pointer;
