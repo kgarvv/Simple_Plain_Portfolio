@@ -26,7 +26,7 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.classList.remove("scroll-animate");
         }
     })
-}, { threshold: 0.5 });
+}, { threshold: 0.3 });
 
 for (let i = 0; i < animate.length; i++) {
     const element = animate[i];

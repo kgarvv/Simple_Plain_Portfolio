@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins" ,sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -13,6 +14,10 @@
     --color3: #C880B7;
     --color4: #9F6BA0;
     --color5: #4A2040;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 .container {
@@ -41,6 +46,10 @@
 }
 
 .hidden_menu {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
     display: none;
 }
 
@@ -88,7 +97,7 @@
 
 .hero_section .heading {
     color: var(--color2);
-    font-size: clamp(0.5rem, 4vw, 5rem);
+    font-size: clamp(1.5rem, 4vw, 5rem);
     font-weight: 700;
 }
 
@@ -106,17 +115,17 @@
 }
 
 .sub_heading .top {
-    font-size: clamp(0.8rem, 3vw, 2.5rem);
+    font-size: clamp(1.2rem, 3vw, 2.5rem);
     font-weight: 700;
 }
 
 .sub_heading .middle {
-    font-size: clamp(0.6rem, 2vw, 2rem);
+    font-size: clamp(1rem, 2vw, 2rem);
     font-weight: 700;
 }
 
 .sub_heading .bottom {
-    font-size: clamp(0.4rem, 3vw, 3rem);
+    font-size: clamp(1rem, 3vw, 3rem);
     font-weight: 700;
 }
 
@@ -135,8 +144,8 @@
 }
 
 .vmw .box {
-    height: 300px;
-    width: 400px;
+    height: 25rem;
+    width: 25rem;
     background-color: var(--color2);
     border-radius: 20px;
     display: flex;
@@ -174,7 +183,7 @@
 }
 
 .work-ex .heading {
-    font-size: clamp(1.5rem, 3vw, 5rem);
+    font-size: clamp(2rem, 3vw, 5rem);
     font-weight: 700;
     color: var(--color2);
 }
@@ -188,19 +197,19 @@
 }
 
 .work-ex h2 {
-    font-size: clamp(1rem, 2.5vw, 3.5rem);
+    font-size: clamp(1.5rem, 2.5vw, 3.5rem);
     font-weight: 700;
     color: var(--color2);
 }
 
 .work-ex h3 {
-    font-size: clamp(1rem, 2vw, 3rem);
+    font-size: clamp(1.25rem, 2vw, 3rem);
     font-weight: 600;
     color: var(--color2);
 }
 
 .work-ex p {
-    font-size: clamp(0.5rem, 1.25vw, 3rem);
+    font-size: clamp(1rem, 1.25vw, 3rem);
     text-align: justify;
     font-weight: 500;
     color: var(--color2);
@@ -218,7 +227,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    gap: 1rem;
+    padding: 2rem;
 }
 
 .footer .top {
@@ -229,7 +239,7 @@
 
 .footer .bottom {
     display: flex;
-    font-size: clamp(1rem, 2vw, 5rem);
+    font-size: clamp(1rem, 1.5vw, 5rem);
     font-weight: 400;
     gap: 50px;
 }
@@ -250,9 +260,9 @@
 
 .animate {
     opacity: 0;
-    transform: translateX(-300px);
+    transform: translateX(-50px);
     transition: all 0.5s linear;
-    transition-delay: 0.1s;
+    transition-delay: 0.2s;
 }
 
 .scroll-animate {
@@ -289,7 +299,9 @@
 
     .navbar {
         min-height: 10vh;
+        width: 100%;
         padding: 0 3rem;
+        /* position: relative; */
     }
 
     .right_nav {
@@ -311,18 +323,18 @@
     .hidden_menu {
         background-color: var(--color5);
         height: 30vh;
-        width: 100vw;
+        width: 100%;
         flex-direction: column;
         align-items: end;
         gap: 1vh;
         padding: 5% 5%;
         position: absolute;
-        top: 110px;
-        right: 0;
+        top: 100%;
+        left: 0;
         z-index: 1;
     }
     
-    .hidden_menu a li {
+    .hidden_menu a, .hidden_menu li {
         list-style: none;
         font-size: 5vh;
         color: var(--color4);
@@ -354,7 +366,8 @@
     }
 
     .box {
-        min-height: 25vh;
+        height: 2em;
+        width: 5%;
         background-color: #C880B7;
         border-radius: 20px;
         display: flex;
@@ -394,7 +407,7 @@
 
     .animate {
         opacity: 0;
-        transform: translateX(-50px);
+        transform: translateX(5vh);
         transition: all 0.5s ease-in-out;
         transition-delay: 0.1s;
     }
@@ -403,7 +416,27 @@
         opacity: 1;
         transform: translateX(0);
     }
+
+    .btn {
+        position: fixed;
+        bottom: 3%;
+        right: 5%;
+        height: 10vh;
+        width: 10vh;
+        border-radius: 50%;
+        font-size: 1.25rem;
+        font-weight: 700;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: var(--color5);
     }
+
+    .btn a {
+        text-decoration: none;
+        color: var(--color1);    
+    }
+}
 
 /* Media Query Section Ends Here */
 

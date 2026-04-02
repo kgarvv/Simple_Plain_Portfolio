@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a class="container" id="container">
+<div class="container" id="container">
         <!-- Navbar Section Starts Here -->
 
-    <nav class="navbar animate">
-        <div class="logo left_nav">
-            <div class="up">Garv Kumar</div>
-            <div class="down">Full Stack Developer.</div>
+    <nav class="navbar">
+        <div class="left_nav">
+            <div class="up animate">Garv Kumar</div>
+            <div class="down animate">Full Stack Developer.</div>
         </div>
-        <div class="right_nav">
+        <div class="right_nav animate">
             <a href="./index.html"><li>Home</li></a>
             <a href="#vmw"><li>Projects</li></a>
             <a href="#work-ex"><li>Experience</li></a>
@@ -23,28 +23,28 @@
         </div>
         <div class="hamburger_menu" id="hamburger_menu" onclick="showMenu()"><img src="./assets/icons8-hamburger-menu-50.png"></div>
         <div class="cross_menu" id="cross_menu" onclick="hideMenu()"><img src="./assets/icons8-cross-50.png"></div>
+        
+        <!-- Hidden Menu Start -->
+        
+        <section class="hidden_menu" id="hidden_menu">
+            <a id="projects"><li>Projects</li></a>
+            <a id="experience"><li>Experience</li></a>
+            <a id="contact-me"><li>Contact</li></a>
+        </section>
+
+        <!-- Navbar Section Ends Here -->
     </nav>
 
-    <!-- Navbar Section Ends Here -->
-    
-    <!-- Hamburger Menu Start -->
-
-    <section class="hidden_menu" id="hidden_menu">
-        <a id="projects"><li>Projects</li></a>
-        <a id="experience"><li>Experience</li></a>
-        <a id="contact-me"><li>Contact</li></a>
-    </section>
-
-    <!-- Hamburger Menu End -->
+    <!-- Hidden Menu End -->
 
     <!-- Hero Section Starts Here -->
 
-    <main class="hero_section animate">
-        <div class="heading">I Build Web Applications.</div>
-        <section class="sub_heading">
-            <p class="top">BPO Employee To Full Stack Developer.</p>
-            <p class="middle">I began my career in BPO, and as my interest in technology grew, I successfully transitioned into full-stack web development.</p>
-            <p class="bottom">I am a Full Stack Web Developer Right Now In Training.</p>
+    <main class="hero_section">
+        <div class="heading animate">I Build Web Applications.</div>
+        <section class="sub_heading animate">
+            <p class="top animate">BPO Employee To Full Stack Developer.</p>
+            <p class="middle animate">I began my career in BPO, and as my interest in technology grew, I successfully transitioned into full-stack web development.</p>
+            <p class="bottom animate">I am a Full Stack Web Developer Right Now In Training.</p>
         </section>
     </main>
 
@@ -52,33 +52,33 @@
     
     <!-- View My Works Starts Here -->
 
-    <section class="vmw animate" id="vmw">
-        <div class="box">
-            <p class="top">Responsive Landing Page</p>
-            <p class="middle">HTML/CSS</p>
-            <p class="bottom">Netflix</p>
+    <section class="vmw" id="vmw">
+        <div class="box animate">
+            <p class="top animate">Responsive Landing Page</p>
+            <p class="middle animate">HTML/CSS</p>
+            <p class="bottom animate">Netflix</p>
         </div>
-        <div class="box">
-            <p class="top">Calculator</p>
-            <p class="middle">HTML/CSS/JavaScript</p>
+        <div class="box animate">
+            <p class="top animate">Calculator</p>
+            <p class="middle animate">HTML/CSS/JavaScript</p>
         </div>
-        <section class="box">
-            <p class="top">BPO Process Automation Script</p>
-            </section>
+        <div class="box animate">
+            <p class="top animate">BPO Process Automation Script</p>
+        </div>
     </section> 
 
     <!-- View My Works Ends Here -->
 
     <!-- Experience Section Starts Here -->
     
-    <section class="work-ex animate" id="work-ex">
-            <h1 class="heading">Professional Experience</h1>
-            <div class="one">
+    <section class="work-ex" id="work-ex">
+            <h1 class="heading animate">Professional Experience</h1>
+            <div class="one animate">
                 <h2>Bell Canada</h2>
                 <h3>Tech Support Associate</h3>
                 <p>Provided technical support to field technicians and customer service representatives by managing inbound calls and service tickets related to residential telecommunications services. Supported troubleshooting and issue resolution across home phone, internet, and television services, ensuring smooth coordination between internal teams and on-ground technicians. Also assisted with connected smart-home and peripheral equipment, including printers, garage door systems, thermostats, and home security devices. Focused on accurate ticket handling, timely escalations, and maintaining high service reliability.</p>
             </div>
-            <div class="one">
+            <div class="one animate">
                 <h2>TELUS International</h2>
                 <h3>Customer Support Associate</h3>
                 <p>Delivered customer-facing technical support by handling inbound calls from customers experiencing issues with home phone, internet, and television services. Guided customers through step-by-step troubleshooting, diagnosed service interruptions, and ensured clear communication throughout the resolution process. Also provided support for connected home devices and equipment such as printers, garage door controls, thermostats, and home security systems. Maintained a strong focus on customer satisfaction, first-call resolution, and professional communication.</p>
@@ -89,9 +89,9 @@
     
     <!-- Footer Section Starts Here -->
     
-    <footer class="footer animate" id="contact">
-        <div class="top">Made by Garv Kumar</div>
-        <section class="bottom">
+    <footer class="footer" id="contact">
+        <div class="top animate">Made by Garv Kumar</div>
+        <section class="bottom animate">
             <a href="https://www.linkedin.com/in/garvkumar/" target="_blank"> <img src="./assets/icons8-linkedin-50.png" class="icons"> LinkedIn</a>
             <a href="https://github.com/kgarvv" target="_blank"> <img src="./assets/icons8-github-50.png" class="icons"> Github</a>
         </section>
